@@ -1,0 +1,766 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#imgsrc{
+    border : black;
+}
+/*Navbar styling*/
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 13000px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    /*background: rgb(46, 75, 129);*/
+    padding: 35px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: rgb(46, 75, 129);
+    
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    
+}
+.navbar .menu li a:hover{
+    color: rgb(66, 114, 204);
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Playfair Display", sans-serif;
+    font-style: italic;
+}
+
+/*button styling*/
+
+.menu-btn{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/*home section styling here*/
+
+.home{
+    display: flex;
+    background: url("background.jpg") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+.home .home-content .typing{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 20px;
+}
+.home .home-content .text-2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 30px;
+    margin: 5px 0;
+}
+.home .home-content a{
+    display: inline-block;
+    background: rgb(46, 75, 129);
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(46, 75, 129);
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: white;
+    background: none;
+
+}
+
+.home .social i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 30px;
+    padding-right: 30px;
+
+}
+
+
+/*ABOUT SECTION STYLING*/
+section{
+    padding: 100px 0;
+}
+.about, .services, .skills, .port, .contact, footer{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+section .title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    /*bottom: 0px;*/
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateY(60px);
+    margin-left: -90px;
+    
+}
+
+.about .title::after{
+    position: absolute;
+  
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background: white;
+
+    transform: translateY(42px);
+    color: rgb(46, 75, 129);
+    margin-left: -50px;
+    
+    
+}
+
+.about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about .about-content .left{
+    width: 45%;
+
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 7px;
+    
+}
+.about .about-content .right{
+    width: 55%;
+
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+
+}
+.about .about-content .right .text span{
+    color: rgb(46, 75, 129);
+
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 19px;
+
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(46, 75, 129);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(46, 75, 129);
+    transition: all 0.3s ease;
+    
+}
+.about .about-content .right a:hover{
+    color: rgb(46, 75, 129);
+    background: none;
+}
+
+
+
+
+
+.skills .title::after{
+    position: absolute;
+
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background: white;
+    transform: translateY(43px);
+    color: rgb(46, 75, 129);
+    margin-left: -70px;
+    
+    
+}
+
+
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left .read-more-btn{
+    display: inline-block;
+    background: rgb(46, 75, 129);
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(46, 75, 129);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
+}
+.skills .skills-content .left a:hover{
+    color: rgb(46, 75, 129);
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: rgb(46, 75, 129);
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+   
+}
+.skills .skills-content .right .css::before{
+    width: 75%;
+   
+}
+.skills .skills-content .right .python::before{
+    width: 80%;
+   
+}
+/* .skills .skills-content .right .::before{
+    width: 90%;
+   
+} */
+.skills .skills-content .right .c::before{
+    width: 80%;
+   
+}
+
+
+/* Portfolio Section stying start here*/
+
+.port .title::after{
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background: white;
+    transform: translateY(43px);
+    color: rgb(46, 75, 129);
+    margin-left: -61.5px;
+    
+}
+
+.port .title::after{
+    content: "Our Projects";
+
+    background: black;
+}
+
+.port .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+.port .carousel .card:hover{
+    background: rgb(46, 75, 129);
+}
+.port .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.port .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.port .carousel .card .text{
+    font: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.port .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(46, 75, 129);
+    transition: all 0.3s ease;
+
+}
+.port .carousel .card:hover img{
+    border-color: white;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(46, 75, 129)!important;
+
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: rgb(46, 75, 129)!important;
+}
+
+
+
+/*contact section styling*/
+
+.contact .title::after{
+    position: absolute;
+
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background: white;
+    transform: translateY(43px);
+    color: rgb(46, 75, 129);
+    margin-left: -65px;
+    
+}
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+    font-size: 19px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .left .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: rgb(46, 75, 129);
+
+}
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-right: 10px;
+}
+/*.contact .right form .name{
+    margin-right: 10px;
+}*/
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(46, 75, 129);
+    background: rgb(46, 75, 129);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: al 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: rgb(46, 75, 129);
+    background: none;
+}
+
+/*footer secion styling*/
+
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+footer a{
+    color: rgb(14, 97, 252);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+footer a:hover{
+    text-decoration: underline;
+
+}
+
+footer .social i{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    padding-right: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* responsive media*/
+@media (max-width: 1304px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+    
+}
+
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+        
+        
+    }
+    
+}
+@media (max-width: 947px){
+    .home .max-width{
+        margin-left: 0 50px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+    section .title::before{
+        content: "";
+        position: absolute;
+        /*bottom: 0px;*/
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: rgb(0, 0, 0);
+        margin-left: -90px;
+        text-align: center;
+        
+    }
+    
+    
+
+}
+/*@media (max-width: 500px){
+    .max-width{
+        padding: 0 10px;
+    }
+}*/
+
+
+
+
+
+@media (max-width: 970px){
+    .max-width{
+        
+        padding: 0 30px;
+        
+    }
+    .menu-btn{
+        z-index: 999;
+        display: block;
+        margin-left: 35px;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+        color: #111;
+        
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 610px;
+        margin-top: 30px;
+        width: 100%;     
+        left: -100%;
+        top: 0;
+        background: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.5s ease;
+        border-radius: 10px;
+    }
+    .navbar .menu.active{
+        left: 0;
+
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 22px 0;
+        font-size: 21px;
+        color: #111;
+        
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .home .home-content .column{
+        width: 50%;
+    }
+    .home .home-content .text-1{
+        font-size: 15px;
+    }
+    .home .home-content .text-2{
+        font-size: 35px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+        margin: 5px 0;
+    }
+    /*.max-width{
+        max-width: 80px;
+
+    }*/
+    .home .home-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        width: 100%;
+    
+    }
+    .about .about-content .right{
+        /*width: 100%;*/
+        margin-left: 20px;
+    
+    }
+    .about .about-content .left{
+        justify-content: center;
+        display: flex;
+        margin: 0 auto 60px;
+    
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+    
+    
+
+}
+
+@media (max-width: 500px){
+    .services .serv-content .card, .skills .skills-content .column{
+        width: 100%;
+        height: 250px;
+                     
+    }
+}
+
+
